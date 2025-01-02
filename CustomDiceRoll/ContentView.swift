@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color.black.ignoresSafeArea()
+            
+            VStack {
+                HStack {
+                    Image(systemName: "dice")
+                        .foregroundColor(.white)
+                        .font(.title)
+                    Text("CustomDiceRoller")
+                        .foregroundStyle(.white)
+                        .font(.title)
+                }
+                .padding(.top, 50) // Abstand von oben
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 
