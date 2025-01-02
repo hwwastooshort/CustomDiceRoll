@@ -5,3 +5,5 @@
 Example:
 2d6 + 8 -> 2 rolls of a dice with 6 sides plus 8  (3 + 4 + 8 -> 15)
 ```
+
+It's basically just a self-written DnD Dice-Roll Parser
