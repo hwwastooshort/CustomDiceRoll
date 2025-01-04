@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133805372D29404E0068409F /* DiceNotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133805362D29404E0068409F /* DiceNotationParser.swift */; };
+		1338053F2D2941130068409F /* CustomDiceRollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1338053E2D2941130068409F /* CustomDiceRollTests.swift */; };
+		133805462D2941870068409F /* DnDNotationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133805452D2941870068409F /* DnDNotationTest.swift */; };
 		13686DC82D26B4C700B2D4AD /* CustomDiceRollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13686DC72D26B4C700B2D4AD /* CustomDiceRollApp.swift */; };
 		13686DCA2D26B4C700B2D4AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13686DC92D26B4C700B2D4AD /* ContentView.swift */; };
 		13686DCC2D26B4C900B2D4AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13686DCB2D26B4C900B2D4AD /* Assets.xcassets */; };
 		13686DCF2D26B4C900B2D4AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13686DCE2D26B4C900B2D4AD /* Preview Assets.xcassets */; };
-		13686DD72D26B8D500B2D4AD /* DiceRollInputProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13686DD62D26B8D500B2D4AD /* DiceRollInputProcessor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		133805402D2941140068409F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13686DBC2D26B4C700B2D4AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13686DC32D26B4C700B2D4AD;
+			remoteInfo = CustomDiceRoll;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		133805362D29404E0068409F /* DiceNotationParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceNotationParser.swift; sourceTree = "<group>"; };
+		1338053C2D2941130068409F /* CustomDiceRollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomDiceRollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1338053E2D2941130068409F /* CustomDiceRollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDiceRollTests.swift; sourceTree = "<group>"; };
+		133805452D2941870068409F /* DnDNotationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDNotationTest.swift; sourceTree = "<group>"; };
 		13686DC42D26B4C700B2D4AD /* CustomDiceRoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomDiceRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13686DC72D26B4C700B2D4AD /* CustomDiceRollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDiceRollApp.swift; sourceTree = "<group>"; };
 		13686DC92D26B4C700B2D4AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13686DCB2D26B4C900B2D4AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13686DCE2D26B4C900B2D4AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		13686DD62D26B8D500B2D4AD /* DiceRollInputProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollInputProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		133805392D2941130068409F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13686DC12D26B4C700B2D4AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1338053D2D2941130068409F /* CustomDiceRollTests */ = {
+			isa = PBXGroup;
+			children = (
+				1338053E2D2941130068409F /* CustomDiceRollTests.swift */,
+				133805452D2941870068409F /* DnDNotationTest.swift */,
+			);
+			path = CustomDiceRollTests;
+			sourceTree = "<group>";
+		};
 		13686DBB2D26B4C700B2D4AD = {
 			isa = PBXGroup;
 			children = (
 				13686DC62D26B4C700B2D4AD /* CustomDiceRoll */,
+				1338053D2D2941130068409F /* CustomDiceRollTests */,
 				13686DC52D26B4C700B2D4AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				13686DC42D26B4C700B2D4AD /* CustomDiceRoll.app */,
+				1338053C2D2941130068409F /* CustomDiceRollTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,7 +106,7 @@
 		13686DD52D26B50400B2D4AD /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				13686DD62D26B8D500B2D4AD /* DiceRollInputProcessor.swift */,
+				133805362D29404E0068409F /* DiceNotationParser.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -81,6 +114,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1338053B2D2941130068409F /* CustomDiceRollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133805422D2941140068409F /* Build configuration list for PBXNativeTarget "CustomDiceRollTests" */;
+			buildPhases = (
+				133805382D2941130068409F /* Sources */,
+				133805392D2941130068409F /* Frameworks */,
+				1338053A2D2941130068409F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				133805412D2941140068409F /* PBXTargetDependency */,
+			);
+			name = CustomDiceRollTests;
+			productName = CustomDiceRollTests;
+			productReference = 1338053C2D2941130068409F /* CustomDiceRollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		13686DC32D26B4C700B2D4AD /* CustomDiceRoll */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13686DD22D26B4C900B2D4AD /* Build configuration list for PBXNativeTarget "CustomDiceRoll" */;
@@ -108,6 +159,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					1338053B2D2941130068409F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 13686DC32D26B4C700B2D4AD;
+					};
 					13686DC32D26B4C700B2D4AD = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -127,11 +182,19 @@
 			projectRoot = "";
 			targets = (
 				13686DC32D26B4C700B2D4AD /* CustomDiceRoll */,
+				1338053B2D2941130068409F /* CustomDiceRollTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1338053A2D2941130068409F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13686DC22D26B4C700B2D4AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,19 +207,72 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		133805382D2941130068409F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133805462D2941870068409F /* DnDNotationTest.swift in Sources */,
+				1338053F2D2941130068409F /* CustomDiceRollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13686DC02D26B4C700B2D4AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133805372D29404E0068409F /* DiceNotationParser.swift in Sources */,
 				13686DCA2D26B4C700B2D4AD /* ContentView.swift in Sources */,
-				13686DD72D26B8D500B2D4AD /* DiceRollInputProcessor.swift in Sources */,
 				13686DC82D26B4C700B2D4AD /* CustomDiceRollApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		133805412D2941140068409F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13686DC32D26B4C700B2D4AD /* CustomDiceRoll */;
+			targetProxy = 133805402D2941140068409F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		133805432D2941140068409F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4QVBKZGZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harveywirth.CustomDiceRollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomDiceRoll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomDiceRoll";
+			};
+			name = Debug;
+		};
+		133805442D2941140068409F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4QVBKZGZK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harveywirth.CustomDiceRollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomDiceRoll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomDiceRoll";
+			};
+			name = Release;
+		};
 		13686DD02D26B4C900B2D4AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		133805422D2941140068409F /* Build configuration list for PBXNativeTarget "CustomDiceRollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133805432D2941140068409F /* Debug */,
+				133805442D2941140068409F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		13686DBF2D26B4C700B2D4AD /* Build configuration list for PBXProject "CustomDiceRoll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

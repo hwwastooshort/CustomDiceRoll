@@ -52,7 +52,6 @@ struct DiceRollButton: View {
     }
 }
 
-
 struct Heading: View {
     var body: some View {
         ZStack {
