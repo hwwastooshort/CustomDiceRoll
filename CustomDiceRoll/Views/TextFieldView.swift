@@ -1,3 +1,10 @@
+//
+//  TextFieldView.swift
+//  CustomDiceRoll
+//
+//  Created by Harvey Wirth on 05.01.25.
+//
+
 import SwiftUI
 
 struct TextFieldView: View {
