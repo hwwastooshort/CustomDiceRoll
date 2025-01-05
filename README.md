@@ -23,5 +23,5 @@ There isn’t a cool app that does this offline and as simply as I want it, so I
 
 
 I used Dmitry Soshnikov’s YouTube series for help, and string formatting & bug fixing was partially done via ChatGPT.
-The project isn’t finished; I still have to complete the UI.
+I implemented a temporary UI, which I plan to rework in the future.
 
