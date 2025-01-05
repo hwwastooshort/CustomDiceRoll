@@ -14,6 +14,10 @@
 		13686DCA2D26B4C700B2D4AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13686DC92D26B4C700B2D4AD /* ContentView.swift */; };
 		13686DCC2D26B4C900B2D4AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13686DCB2D26B4C900B2D4AD /* Assets.xcassets */; };
 		13686DCF2D26B4C900B2D4AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13686DCE2D26B4C900B2D4AD /* Preview Assets.xcassets */; };
+		13C772442D2AB13500200550 /* BackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C772432D2AB13500200550 /* BackGroundView.swift */; };
+		13C772482D2AB16100200550 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C772472D2AB16100200550 /* HeadingView.swift */; };
+		13C7724A2D2AB20800200550 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C772492D2AB20800200550 /* TextFieldView.swift */; };
+		13C7724C2D2ABC4900200550 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C7724B2D2ABC4900200550 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		13686DC92D26B4C700B2D4AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13686DCB2D26B4C900B2D4AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13686DCE2D26B4C900B2D4AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13C772432D2AB13500200550 /* BackGroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundView.swift; sourceTree = "<group>"; };
+		13C772472D2AB16100200550 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		13C772492D2AB20800200550 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		13C7724B2D2ABC4900200550 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +96,7 @@
 			children = (
 				13686DD52D26B50400B2D4AD /* Logic */,
 				13686DC72D26B4C700B2D4AD /* CustomDiceRollApp.swift */,
-				13686DC92D26B4C700B2D4AD /* ContentView.swift */,
+				13C772422D2AB0D000200550 /* Views */,
 				13686DCB2D26B4C900B2D4AD /* Assets.xcassets */,
 				13686DCD2D26B4C900B2D4AD /* Preview Content */,
 			);
@@ -109,6 +117,18 @@
 				133805362D29404E0068409F /* DiceNotationParser.swift */,
 			);
 			path = Logic;
+			sourceTree = "<group>";
+		};
+		13C772422D2AB0D000200550 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13686DC92D26B4C700B2D4AD /* ContentView.swift */,
+				13C772432D2AB13500200550 /* BackGroundView.swift */,
+				13C772472D2AB16100200550 /* HeadingView.swift */,
+				13C772492D2AB20800200550 /* TextFieldView.swift */,
+				13C7724B2D2ABC4900200550 /* ScoreView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				133805372D29404E0068409F /* DiceNotationParser.swift in Sources */,
+				13C772482D2AB16100200550 /* HeadingView.swift in Sources */,
+				13C7724A2D2AB20800200550 /* TextFieldView.swift in Sources */,
 				13686DCA2D26B4C700B2D4AD /* ContentView.swift in Sources */,
+				13C7724C2D2ABC4900200550 /* ScoreView.swift in Sources */,
+				13C772442D2AB13500200550 /* BackGroundView.swift in Sources */,
 				13686DC82D26B4C700B2D4AD /* CustomDiceRollApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
