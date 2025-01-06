@@ -74,7 +74,15 @@ struct DiceNotationParser {
         while let token = tokens.first, case let .operatorSymbol(op) = token, "*/".contains(op) {
             tokens.removeFirst()
             let rhs = try parseFactor(&tokens)
-            value = op == "*" ? value * rhs : value / rhs
+            
+            if op == "/" {
+                guard rhs != 0 else {
+                    throw NSError(domain: "DivisionByZero", code: 1, userInfo: [NSLocalizedDescriptionKey: "Division by zero is not allowed"])
+                }
+                value /= rhs
+            } else {
+                value *= rhs
+            }
         }
         return value
     }

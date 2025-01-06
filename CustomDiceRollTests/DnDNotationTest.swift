@@ -52,4 +52,17 @@ final class DnDNotationTest: XCTestCase {
             XCTFail("Die Rolls with Constants and Parantheses should work without any Issues: \(error)")
         }
     }
+    
+    func testDivisionByZeroThrowsError() {
+        let input = "10 / 0"
+        XCTAssertThrowsError(try DiceNotationParser.parseAndEvaluate(input)) { error in
+            guard let nsError = error as NSError? else {
+                XCTFail("Error is not an NSError")
+                return
+            }
+            XCTAssertEqual(nsError.domain, "DivisionByZero", "Unexpected error domain")
+            XCTAssertEqual(nsError.code, 1, "Unexpected error code")
+            XCTAssertEqual(nsError.userInfo[NSLocalizedDescriptionKey] as? String, "Division by zero is not allowed", "Unexpected error message")
+        }
+    }
 }
